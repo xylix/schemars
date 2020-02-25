@@ -57,3 +57,4 @@ formatted_string_impl!(NaiveDate, "date");
 formatted_string_impl!(NaiveDateTime, "partial-date-time");
 formatted_string_impl!(NaiveTime, "partial-date-time");
 formatted_string_impl!(DateTime, "date-time", <Tz: TimeZone> JsonSchema for DateTime<Tz>);
+formatted_string_impl!(Duration, "duration", <Tz: TimeZone> JsonSchema for Duration<Tz>);
